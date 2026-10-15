@@ -21,7 +21,7 @@ public class movimiento : MonoBehaviour
         Debug.Log("peio");
         moveInput = value.Get<Vector2>();
         Debug.Log("Movimiento: " + moveInput);
-        moveInput = moveInput.normalized * 0.02f;
+        moveInput = moveInput.normalized * 0.2f;
         transform.position += new Vector3(moveInput.x, 0, 0);
 
     }

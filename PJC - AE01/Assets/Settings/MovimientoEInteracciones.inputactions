@@ -1,6 +1,6 @@
 {
     "version": 1,
-    "name": "Movimiento",
+    "name": "MovimientoEInteracciones",
     "maps": [
         {
             "name": "movimiento",
@@ -85,7 +85,7 @@
                 },
                 {
                     "name": "2D Vector",
-                    "id": "5ce042e7-79e8-4013-8e8f-c13f4d4047dc",
+                    "id": "d27329a5-7f6d-444a-9c29-59955f856a2e",
                     "path": "2DVector",
                     "interactions": "",
                     "processors": "",
@@ -96,7 +96,7 @@
                 },
                 {
                     "name": "up",
-                    "id": "22818520-c72a-4acf-ae16-61df36a6e226",
+                    "id": "4a4832ed-8814-48d8-b359-78b046673885",
                     "path": "<Keyboard>/w",
                     "interactions": "",
                     "processors": "",
@@ -107,7 +107,7 @@
                 },
                 {
                     "name": "down",
-                    "id": "9e8f09dd-87e2-49eb-b98a-93f2b5453267",
+                    "id": "56864a99-d371-4651-8b21-97cd21866e00",
                     "path": "<Keyboard>/s",
                     "interactions": "",
                     "processors": "",
@@ -118,7 +118,7 @@
                 },
                 {
                     "name": "left",
-                    "id": "05a39d6e-1fc5-4589-b7cb-ca4cd26b4693",
+                    "id": "5ab8f98a-b7aa-45e7-9b0f-3efe36a833cd",
                     "path": "<Keyboard>/a",
                     "interactions": "",
                     "processors": "",
@@ -129,7 +129,7 @@
                 },
                 {
                     "name": "right",
-                    "id": "dfc71e45-04ec-4e76-aabd-f7996f25c026",
+                    "id": "2564de02-c203-469e-bfae-9818229703b6",
                     "path": "<Keyboard>/d",
                     "interactions": "",
                     "processors": "",
@@ -137,6 +137,35 @@
                     "action": "MoveTeclado",
                     "isComposite": false,
                     "isPartOfComposite": true
+                }
+            ]
+        },
+        {
+            "name": "Interacciones",
+            "id": "a2f4f9aa-3b34-4151-bfa5-d3a3ead8ed22",
+            "actions": [
+                {
+                    "name": "Recoger",
+                    "type": "Button",
+                    "id": "8d6edcaa-cf34-4b5a-8c83-379b19eddb10",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false,
+                    "priority": 0
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "c47ed419-3b3c-4de1-9764-4bfc73a58973",
+                    "path": "<Gamepad>/buttonWest",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Recoger",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }
