@@ -153,6 +153,16 @@
                     "interactions": "",
                     "initialStateCheck": false,
                     "priority": 0
+                },
+                {
+                    "name": "RecogerTeclado",
+                    "type": "Button",
+                    "id": "2b8f45e0-2572-4589-98d9-b768c598aa8f",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false,
+                    "priority": 0
                 }
             ],
             "bindings": [
@@ -164,6 +174,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Recoger",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ea82c18c-6fbc-4a95-a3e0-61e6815f592a",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RecogerTeclado",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
