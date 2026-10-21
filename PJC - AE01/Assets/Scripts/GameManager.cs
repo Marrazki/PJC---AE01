@@ -16,6 +16,6 @@ public class GameManager : MonoBehaviour
     }
     public void SumarPuntos(int a)
     {
-        puntuacion = +a;
+        puntuacion = puntuacion +a;
     }
 }
