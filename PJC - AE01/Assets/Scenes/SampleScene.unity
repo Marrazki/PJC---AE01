@@ -131,6 +131,7 @@ GameObject:
   - component: {fileID: 335961159}
   - component: {fileID: 335961162}
   - component: {fileID: 335961161}
+  - component: {fileID: 335961163}
   m_Layer: 0
   m_Name: Planta
   m_TagString: PLANTA
@@ -188,7 +189,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.16227125, g: 0.8037735, b: 0.24026181, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -227,6 +228,7 @@ MonoBehaviour:
   gameManager: {fileID: 1289913007}
   cooldown: 5
   recompensa: 3
+  listaParaRecoger: 1
 --- !u!61 &335961162
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -273,6 +275,36 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &335961163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 335961158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.PlayerInput
+  m_Actions: {fileID: -944628639613478452, guid: f21d8130a3551c34db2ff4cc50d60d10, type: 3}
+  m_NotificationBehavior: 0
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents: []
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: movimiento
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
 --- !u!1 &438279883
 GameObject:
   m_ObjectHideFlags: 0
@@ -411,6 +443,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d9f781448da32446891f6e490e866d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::movimiento
+  velocidad: 5
 --- !u!50 &438279888
 Rigidbody2D:
   serializedVersion: 5
@@ -486,6 +519,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02b2a7e1cdf77fc4c84dc123d02e1460, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player
+  plantaCercana: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
