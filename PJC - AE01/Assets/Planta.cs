@@ -1,6 +1,7 @@
 
 using UnityEngine;
 using System.Collections;
+using Unity.VisualScripting;
 
 public class Planta : MonoBehaviour
 {
@@ -45,7 +46,8 @@ public class Planta : MonoBehaviour
 
         listaParaRecoger = true;
         corrutinaCrecimiento = null;
-
+        //COLOR
+        this.gameObject.GetComponent<SpriteRenderer>().color = Color.white;
         Debug.Log("¡La planta está lista para recoger!");
     }
 
@@ -61,6 +63,8 @@ public class Planta : MonoBehaviour
 
         Debug.Log("¡Has recogido la planta y ganado "
                   + recompensa + " puntos!");
+        //COLOR
+        this.gameObject.GetComponent<SpriteRenderer>().color = Color.green;
 
         // Empieza un nuevo ciclo de crecimiento.
         IniciarCrecimiento();
