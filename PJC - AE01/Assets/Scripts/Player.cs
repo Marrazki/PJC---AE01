@@ -47,4 +47,12 @@ public class Player : MonoBehaviour
             plantaCercana.Recoger();
         }
     }
+    public void OnRecoger(InputValue value)
+    {
+        Debug.Log("RECOGER");
+        if (value.isPressed && plantaCercana != null)
+        {
+            plantaCercana.Recoger();
+        }
+    }
 }
