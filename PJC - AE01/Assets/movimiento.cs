@@ -1,28 +1,27 @@
+
 using UnityEngine;
 using UnityEngine.InputSystem;
-using System.Collections;
-using UnityEngine.InputSystem;
-
 
 public class movimiento : MonoBehaviour
 {
-    Vector2 moveInput;
+    public float velocidad = 5f;
 
-    public void OnMove(InputValue value)
+    private Vector2 mov;
+    private Rigidbody2D rb;
+
+    private void Awake()
     {
-        moveInput = value.Get<Vector2>();
-        Debug.Log("Movimiento: " + moveInput);
-        moveInput = moveInput.normalized * 0.02f;
-        transform.position += new Vector3(moveInput.x, 0, 0);
-
+        rb = GetComponent<Rigidbody2D>();
     }
+
     public void OnMoveTeclado(InputValue value)
     {
-        Debug.Log("peio");
-        moveInput = value.Get<Vector2>();
-        Debug.Log("Movimiento: " + moveInput);
-        moveInput = moveInput.normalized * 0.2f;
-        transform.position += new Vector3(moveInput.x, 0, 0);
+        Debug.Log("MOVE");
+        mov = value.Get<Vector2>();
+    }
 
+    private void FixedUpdate()
+    {
+        rb.linearVelocity = mov * velocidad;
     }
 }

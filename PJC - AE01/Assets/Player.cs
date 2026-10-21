@@ -4,7 +4,7 @@ using UnityEngine.InputSystem;
 
 public class Player : MonoBehaviour
 {
-    private Planta plantaCercana;
+    public Planta plantaCercana;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
